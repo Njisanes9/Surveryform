@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <h1 id="title">Health Survey Form</h1>
+      <p id="description">Tell us more about yourself</p>
+      <form id="survey-form" method="POST">        
+        <fieldset>
+          <label id="name-label">Name
+          <input type="text" placeholder="Enter your name" id="name" required/>
+        </label>
+        <label id="email-label">Email
+          <input type="email" placeholder="Enter your email" id="email" required/>
+        </label>
+         <label id="number-label">Date Of Birth
+          <input type="date" id="dob"  required/>
+        </label>
+        <label id="number-label">Phone Number
+          <input type="number" placeholder="Enter your phone number" id="number" min="13" max="120" required/>
+        </label>
+        <label>
+            Gender
+            <select id="dropdown">
+            <option value="0" disabled>--Select Option--</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Non-Binary</option>
+            <option value="3">Prefer not to say</option>
+          </select>
+        </label>
+        </fieldset>
+        <fieldset>
+            <label>Health Status</label>
+            <label class="radio-label"><input type="radio" name="status" id="excellent" checked/class="inline"> 
+                Excellent           
+            </label>
+            <label class="radio-label"><input type="radio" name="status" id="good" class="inline"/> 
+                Good
+            </label>
+            <label class="radio-label"><input type="radio" name="status" id="fair" class="inline"/> 
+                Fair
+            </label>
+            <label class="radio-label"><input type="radio" name="status" id="poor" class="inline"/> 
+                Poor
+            </label>
+            
+            
+           
+        
+        </fieldset>
+         <fieldset>
+            <label>Do you have symptoms?</label>
+            <label><input type="checkbox" value="" class="inline">Shortness of breath</label>
+            <label><input type="checkbox" value="" class="inline">Cough</label>
+            <label><input type="checkbox" value="" class="inline">Fatigue</label>
+            <label><input type="checkbox" value="" class="inline">None</label>
+        </fieldset>
+        <fieldset>
+            <label>Anything you want to add?
+            <textarea placeholder="Additional information on your health."></textarea>
+            </label>
+        
+        </fieldset>
+        <fieldset>
+            <input type="submit" id="submit" value="Submit"/>
+        </fieldset>
+        
+        
+        
+      </form>
+  </body >
+</html>
